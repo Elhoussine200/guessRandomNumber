@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/game.js"></script>
-    <script src="assets/js/script.js"></script>
 </head>
+
 <body>
+    <table>
+        <tr>
+            <td>
+                <h2>settings</h2>
+                <input type="text" name="min" id="Min" placeholder="Enter the Minimum of Random Number" >
+                <input type="text" name="min" id="Max" placeholder="Enter the Maximum of Random Number">
+                <input type="text" name="min" id="Tries" placeholder="Number of Tries" >
+                <button  onclick="StartNewGame()">Start New Game </button>
+                <div id="Error"></div>
+                
+                
+                
+            </td>
+            <td>
+                <div class="screen">
+                    <img class="active"  id="startgame" src="assets/img/startgame.gif" alt="">
+                    <img id="roundQuestion" src="assets/img/guesswhat.gif" alt="">
+                    <img id="gameWon" src= "assets/img/won.gif" alt="">
+                    <img id="gameLost" src="assets/img/lose.gif" alt="">
+                    <img id="guessTooLow" src="assets/img/more.gif" alt="">
+                    <img id="guessTooHigh" src="assets/img/slowdown.gif" alt="">
+                </div>
+                <input type="text" name="guess" id="guess" placeholder="what do you think the number is ?">
+                <button onclick="Verify()"> Check</button>
+            </td>
+        </tr>
+    </table>
     
+    <script src="assets/js/script.js"></script>
+    
+
+
+    <!-- <iframe src="https://giphy.com/embed/3o7abKhOpu0NwenH3O" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/spongebob-cartoon-nickelodeon-thumbs-3o7abKhOpu0NwenH3O">via GIPHY</a></p> -->
+
 </body>
+
 </html>

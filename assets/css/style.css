@@ -1,0 +1,22 @@
+input{
+
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.errMsg{
+    border: 1px solid red;
+    background-color: pink;
+    color: red;
+    border-radius: 10px;
+    padding: 5px;
+}
+img{
+    height: 200px;
+    width: 300px;
+    display: none;
+}
+.active{
+    display: inline;
+}
